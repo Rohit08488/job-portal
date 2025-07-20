@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* fallback if anything breaks */
+}
+/* Removes gap above hero */
+.hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background-color: #1e3a8a !important; /* Matches your navbar start color */
+}
+
+/* Ensures body doesn't introduce white background */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #1e3a8a; /* fallback matching navbar */
+}
+
+/* Fix for any unexpected white line caused by rendering */
+.header-navbar {
+  border-bottom: none !important;
+  position: relative;
+  z-index: 10;
+}

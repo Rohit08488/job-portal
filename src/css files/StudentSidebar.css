@@ -1,0 +1,81 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: transparent; /* no overlay */
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.sidebar.active {
+  width: 25%;  /* sidebar panel width */
+}
+
+.sidebar-content {
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  backdrop-filter: blur(10px);                /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  width: 100%;  /* full width of sidebar */
+  height: 100%;
+  overflow-y: auto;
+  color: #222222; /* dark grey text */
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-left: 4px solid #007bff; /* blue border */
+  z-index: 10000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff; /* blue close button */
+  cursor: pointer;
+}
+
+h3,
+h5 {
+  color: #0056b3; /* darker blue headings */
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #111111; /* almost black for emphasis */
+}
+
+input.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  color: #222222;
+  background-color: rgba(255,255,255,0.8);
+}
+
+label {
+  font-size: 14px;
+  color: #333333;
+}
+
+button.btn-outline-info {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+button.btn-outline-info:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+button.btn-success,
+button.btn-warning {
+  border-radius: 6px;
+}

@@ -1,0 +1,483 @@
+/* Login Page Styles with Blue Theme - Enhanced Specificity */
+
+/* Import Google Fonts for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global Login Page Styles with Higher Specificity */
+.login-page {
+  font-family: 'Inter', sans-serif !important;
+  background: linear-gradient(135deg, #f8faff 0%, #e3f2fd 100%) !important;
+  min-height: 100vh !important;
+}
+
+/* Main Container */
+.login-page .container-fluid {
+  background: linear-gradient(135deg, #f8faff 0%, #e3f2fd 100%) !important;
+  padding: 40px 20px !important;
+}
+
+/* Video Section */
+.login-page .video-container {
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15) !important;
+  animation: slideInLeft 1s ease-out !important;
+}
+
+.login-page video {
+  border-radius: 20px !important;
+  transition: transform 0.3s ease !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: 600px !important;
+  object-fit: cover !important;
+}
+
+.login-page .video-container:hover video {
+  transform: scale(1.02) !important;
+}
+
+/* Form Section with Higher Specificity */
+.login-page .form-section {
+  background: white !important;
+  padding: 50px 40px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.1) !important;
+  animation: slideInRight 1s ease-out !important;
+  border: 1px solid rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Login Title */
+.login-page .login-title {
+  font-size: 2.5rem !important;
+  color: #1e3a8a !important;
+  font-weight: 700 !important;
+  margin-bottom: 30px !important;
+  text-align: center !important;
+  position: relative !important;
+}
+
+.login-page .login-title::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -10px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 80px !important;
+  height: 4px !important;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8) !important;
+  border-radius: 2px !important;
+}
+
+/* Form Controls Override with Maximum Specificity */
+.login-page .form-section .login-floating-label,
+.login-page .login-form .form-floating {
+  margin-bottom: 25px !important;
+}
+
+.login-page .form-section .login-form-control,
+.login-page .form-section .login-form-select,
+.login-page .login-floating-label > .form-control,
+.login-page .login-floating-label > .form-select,
+.login-page .form-floating > .form-control,
+.login-page .form-floating > .form-select {
+  border: 2px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 20px 15px 8px 15px !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+  background: #f9fafb !important;
+  color: #374151 !important;
+}
+
+.login-page .form-section .login-form-control:focus,
+.login-page .form-section .login-form-select:focus,
+.login-page .login-floating-label > .form-control:focus,
+.login-page .login-floating-label > .form-select:focus,
+.login-page .form-floating > .form-control:focus,
+.login-page .form-floating > .form-select:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+  background: white !important;
+  outline: none !important;
+}
+
+.login-page .login-floating-label > label,
+.login-page .form-floating > label {
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+  padding: 8px 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.login-page .form-floating > .form-control:focus ~ label,
+.login-page .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.login-page .form-floating > .form-select:focus ~ label,
+.login-page .form-floating > .form-select:not([value=""]) ~ label,
+.login-page .login-floating-label > .form-control:focus ~ label,
+.login-page .login-floating-label > .form-control:not(:placeholder-shown) ~ label,
+.login-page .login-floating-label > .form-select:focus ~ label,
+.login-page .login-floating-label > .form-select:not([value=""]) ~ label {
+  color: #3b82f6 !important;
+  font-weight: 600 !important;
+}
+
+/* Custom Button Styles with Maximum Specificity */
+.login-page .form-section .login-btn,
+.login-page .login-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 15px 30px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: white !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.login-page .login-btn::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+  transition: left 0.5s ease !important;
+}
+
+.login-page .login-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
+}
+
+.login-page .login-btn:hover::before {
+  left: 100% !important;
+}
+
+.login-page .login-btn:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Message Styles */
+.login-page .message-alert.success-message,
+.login-page .success-message {
+  color: #059669 !important;
+  background: #ecfdf5 !important;
+  border: 1px solid #a7f3d0 !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  margin-top: 20px !important;
+  font-weight: 500 !important;
+  animation: slideInUp 0.5s ease-out !important;
+}
+
+.login-page .message-alert.error-message,
+.login-page .error-message {
+  color: #dc2626 !important;
+  background: #fef2f2 !important;
+  border: 1px solid #fecaca !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  margin-top: 20px !important;
+  font-weight: 500 !important;
+  animation: slideInUp 0.5s ease-out !important;
+}
+
+/* Loading State */
+.login-page .login-btn:disabled,
+.login-page .login-btn.loading {
+  background: #9ca3af !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.login-page .login-btn:disabled::before,
+.login-page .login-btn.loading::before {
+  display: none !important;
+}
+
+/* Form Animation */
+.login-page .form-floating,
+.login-page .login-floating-label {
+  animation: fadeInUp 0.6s ease-out both !important;
+}
+
+.login-page .form-floating:nth-child(1),
+.login-page .login-floating-label:nth-child(1) {
+  animation-delay: 0.1s !important;
+}
+
+.login-page .form-floating:nth-child(2),
+.login-page .login-floating-label:nth-child(2) {
+  animation-delay: 0.2s !important;
+}
+
+.login-page .form-floating:nth-child(3),
+.login-page .login-floating-label:nth-child(3) {
+  animation-delay: 0.3s !important;
+}
+
+.login-page .login-btn {
+  animation: fadeInUp 0.6s ease-out 0.4s both !important;
+}
+
+/* Animation Keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bootstrap Override - Nuclear Option */
+.login-page * {
+  font-family: 'Inter', sans-serif;
+}
+
+.login-page .btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3) !important;
+}
+
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus,
+.login-page .btn-primary:active {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .login-page .form-section {
+    padding: 40px 30px !important;
+  }
+  
+  .login-page .login-title {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page .container-fluid {
+    padding: 20px 15px !important;
+  }
+  
+  .login-page .form-section {
+    padding: 30px 25px !important;
+    margin-top: 30px !important;
+  }
+  
+  .login-page .login-title {
+    font-size: 2rem !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .login-page .form-floating,
+  .login-page .login-floating-label {
+    margin-bottom: 20px !important;
+  }
+  
+  .login-page .form-floating > .form-control,
+  .login-page .form-floating > .form-select,
+  .login-page .login-form-control,
+  .login-page .login-form-select {
+    padding: 18px 12px 6px 12px !important;
+    font-size: 15px !important;
+  }
+  
+  .login-page .login-btn {
+    padding: 12px 25px !important;
+    font-size: 15px !important;
+  }
+  
+  .login-page video {
+    max-height: 400px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page .container-fluid {
+    padding: 15px 10px !important;
+  }
+  
+  .login-page .form-section {
+    padding: 25px 20px !important;
+  }
+  
+  .login-page .login-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .login-page .form-floating > .form-control,
+  .login-page .form-floating > .form-select,
+  .login-page .login-form-control,
+  .login-page .login-form-select {
+    padding: 16px 10px 4px 10px !important;
+    font-size: 14px !important;
+  }
+  
+  .login-page .form-floating > label {
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+  
+  .login-page .login-btn {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+  
+  .login-page video {
+    max-height: 300px !important;
+  }
+}
+
+/* Focus and Accessibility */
+.login-page .form-floating > .form-control:focus,
+.login-page .form-floating > .form-select:focus,
+.login-page .login-btn:focus,
+.login-page .login-form-control:focus,
+.login-page .login-form-select:focus {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+}
+
+/* Enhanced hover effects for better UX */
+.login-page .form-floating > .form-control:hover,
+.login-page .form-floating > .form-select:hover,
+.login-page .login-form-control:hover,
+.login-page .login-form-select:hover {
+  border-color: #93c5fd !important;
+  background: white !important;
+}
+
+/* Loading animation */
+.login-page .loading {
+  position: relative !important;
+}
+
+.login-page .loading::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: 2px solid transparent !important;
+  border-top: 2px solid white !important;
+  border-radius: 50% !important;
+  animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Registration button styling for login page */
+.registration-main-btn.login-page-style {
+  background: #10b981 !important; /* Green */
+  font-size: 13px !important;
+  padding: 6px 12px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  border: none !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  animation: none !important;
+  color: #fff !important;
+  position: static !important;
+  width: auto !important;
+}
+
+.registration-main-btn.login-page-style::before,
+.registration-main-btn.login-page-style::after {
+  display: none !important;
+}
+
+/* Additional Bootstrap Overrides */
+.login-page .form-control,
+.login-page .form-select {
+  background-color: #f9fafb !important;
+  border: 2px solid #e5e7eb !important;
+  color: #374151 !important;
+}
+
+.login-page .form-control:focus,
+.login-page .form-select:focus {
+  background-color: white !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Ensure the background gradient shows */
+body .login-page {
+  background: linear-gradient(135deg, #f8faff 0%, #e3f2fd 100%) !important;
+}
+
+/* Print Styles */
+@media print {
+  .login-page .video-container {
+    display: none !important;
+  }
+  
+  .login-page .form-section {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb !important;
+  }
+}
