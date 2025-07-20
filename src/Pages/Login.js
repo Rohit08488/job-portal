@@ -142,7 +142,7 @@ function Login() {
       <div className="container-fluid vh-100 d-flex align-items-center">
         <div className="row w-100 px-5">
           <div className="col-md-7 d-flex align-items-center justify-content-center">
-            <div className="video-container">
+            <div className="video-container" style={{paddingTop:"150px"}}>
               <video
                 width="100%"
                 height="auto"
