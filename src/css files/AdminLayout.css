@@ -1,0 +1,65 @@
+/* Remove all default margins and padding from body & html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.admin-container {
+    display: flex;
+    height: 100vh;
+    padding: 0%;
+
+}
+
+/* Sidebar styles */
+.sidebar-container {
+    width: 250px;
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Admin Section */
+.admin-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+/* Buttons Column - Vertical Alignment */
+.admin-buttons {
+    width: 20%;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+/* Style the Links as Buttons */
+.admin-buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #374151;
+    text-align: center;
+  }
+
+.admin-buttons a:hover {
+    background-color: #34495e; /* Slightly lighter blue */
+}
